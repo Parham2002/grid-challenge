@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header { grid-area: header; }
+.aside { grid-area: aside; }
+.nav { grid-area: nav; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+    "header header header"
+    "aside nav nav"
+    "aside main main"
+    "footer footer footer";
+    gap: 10px;
+}
+
+.grid-container > div {
+    border: 2px solid black;
+}
