@@ -13,17 +13,24 @@
 .grid-container {
     background-color: pink;
     display: grid;
+    grid-template-rows: 1fr 3.5fr 3.5fr 1fr;
     height: 100%;
     grid-template-areas: 
     "header header header"
     "aside nav nav"
     "aside main main"
     "footer footer footer";
-    gap: 15px;
+    gap: 10px;
 }
 
-.grid-container > div {
+.aside, .nav, .main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header, .footer {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
 }
