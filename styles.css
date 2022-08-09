@@ -19,12 +19,11 @@
     "aside nav nav"
     "aside main main"
     "footer footer footer";
-    gap: 10px;
+    gap: 15px;
 }
 
 .grid-container > div {
-    border: 2px solid black;
-    text-align: center;
-    
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
